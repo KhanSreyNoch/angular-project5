@@ -1,0 +1,349 @@
+.home-page {
+  background-color: brown;
+  font-family: Khmer OS Siemreap;
+}
+.nav-home-top > ul {
+  background-color: #dde9d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #5f7270;
+  padding: 8px 0px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+}
+
+.link-first {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: green;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(255, 255, 255);
+  min-width: 300px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.dropdown > li a:hover {
+  color: green;
+}
+.dropdown1 {
+  min-width: 100px;
+}
+.dropdown2 {
+  min-width: 230px;
+}
+a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: black;
+}
+.dropdown li a {
+  padding: 10px;
+}
+.has-dropdown:hover > a {
+  color: green;
+  cursor: pointer;
+}
+.has-dropdown:hover > .dropdown {
+  display: block;
+}
+/* hide  */
+.fa-chevron-up {
+  display: none;
+}
+.has-dropdown:hover .fa-chevron-down {
+  display: none;
+}
+.has-dropdown:hover .fa-chevron-up {
+  display: inline-block;
+}
+
+/* animation */
+.slider-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.images-container {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  animation: slideForever 28s infinite linear;
+  /* animation: slideForever 30s linear infinite; */
+}
+
+.images-container section {
+  flex: 0 0 100%;
+  height: 450px;
+}
+
+.images-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Positioning the Dots */
+.nav-dots {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+  height: 10px;
+  gap: 7px;
+}
+
+.nav-dots a {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-dots a:hover,
+.nav-dots a:focus {
+  background-color: #007bff;
+  transform: scale(1);
+}
+
+@keyframes slideForever {
+  0%,
+  12% {
+    transform: translateX(0);
+  }
+
+  14%,
+  26% {
+    transform: translateX(-100%);
+  }
+
+  28%,
+  40% {
+    transform: translateX(-200%);
+  }
+
+  42%,
+  54% {
+    transform: translateX(-300%);
+  }
+
+  56%,
+  68% {
+    transform: translateX(-400%);
+  }
+
+  70%,
+  82% {
+    transform: translateX(-500%);
+  }
+
+  84%,
+  96% {
+    transform: translateX(-600%);
+  }
+
+  100% {
+    transform: translateX(-700%);
+  }
+}
+
+/* @keyframes slideForever {
+  0% {
+    transform: translateX(0);
+  }
+  14% {
+    transform: translateX(0);
+  }
+  14.2% {
+    transform: translateX(-100%);
+  }
+  28% {
+    transform: translateX(-100%);
+  }
+  28.5% {
+    transform: translateX(-200%);
+  }
+  42% {
+    transform: translateX(-200%);
+  }
+  42.8% {
+    transform: translateX(-300%);
+  }
+  57% {
+    transform: translateX(-300%);
+  }
+  57.1% {
+    transform: translateX(-400%);
+  }
+  71% {
+    transform: translateX(-400%);
+  }
+  71.4% {
+    transform: translateX(-500%);
+  }
+  85% {
+    transform: translateX(-500%);
+  }
+  85.7% {
+    transform: translateX(-600%);
+  }
+  100% {
+    transform: translateX(-700%);
+  }
+} */
+
+/* button  */
+
+.ticker-wrapper {
+  display: flex;
+  overflow: hidden;
+  height: 45px;
+  align-items: center;
+  border: 2px solid #b8860b;
+  background-color: #d2ab6f;
+}
+
+.ticker-label {
+  background: #d27e00;
+  color: white;
+  padding: 0 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10; /* Keeps it on top */
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: flex;
+  padding-left: 20px;
+  animation: scrollTicker 20s linear infinite; /* Adjust time for speed */
+}
+
+.ticker-content span {
+  color: white;
+  padding: 0 40px;
+  font-size: 14px;
+}
+.ticker-content span:hover {
+  color: green;
+  cursor: pointer;
+}
+/* THE SEAMLESS ACTION */
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*  */
+* {
+  box-sizing: border-box;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

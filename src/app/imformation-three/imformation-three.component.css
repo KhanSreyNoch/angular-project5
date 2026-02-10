@@ -1,0 +1,135 @@
+.imformation-three {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.news-section-container {
+  display: flex;
+  width: 90%;
+  margin-top: 40px;
+  gap: 20px;
+  font-family: Khmer OS Siemreap;
+}
+
+.sidebar {
+  width: 234px;
+  /* border-left: 4px solid #1c5e20; */
+  background: #ededee;
+}
+.box-header {
+  margin: 10px 0px;
+  height: 90px;
+  border-left: 4px solid #1c5e20;
+  position: sticky;
+  top: 0;
+}
+.sidebar-tag {
+  color: #1c5e20;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 20px;
+}
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: #f4f7f6;
+  border: 1px solid #d6e0db;
+  border-radius: 4px;
+  color: #1fa463;
+  font-size: 11px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 117px;
+  margin-top: 18px;
+}
+
+.btn-link .icon {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.btn-link:hover {
+  border: 1px solid green;
+}
+
+/* Grid Styling */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 18px;
+  flex: 1;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: 2s;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 30px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 12px 4px rgba(0, 0, 0, 0.03);
+}
+
+.update-info {
+  font-size: 12px;
+  color: #978c93;
+  margin-left: 91px;
+}
+.update-info > span {
+  color: green;
+  font-size: 19px;
+}
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #666;
+  margin-left: 93px;
+}
+.file-size > span {
+  color: green;
+  font-size: 19px;
+}
+/* Download Link Styling */
+.link-download {
+  background-color: #006837; /* Dark green */
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.link-download:hover {
+  background-color: #004d29;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* info4 */
+.imformation-four,
+.imformation-five,
+.imformation-six,
+.imformation-seven,
+.imformation-eigth {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}

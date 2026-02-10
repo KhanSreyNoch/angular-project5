@@ -1,0 +1,59 @@
+<div class="imformation-first">
+  <div class="news-section-container">
+    <aside class="sidebar">
+      <div class="box-header">
+        <h2 class="sidebar-tag">#ព័ត៌មានថ្មីៗ</h2>
+        <a href="#" class="btn-link">
+          <span class="icon">
+            <i class="fa-solid fa-share"></i>
+          </span>
+          មើលបន្ថែម
+        </a>
+      </div>
+    </aside>
+
+    <div class="news-grid">
+      <div class="news-box" *ngFor="let item of articles">
+        <div class="thumbnail">
+          <img src="/src/assets/img/homeImg1.jpg" alt="" />
+        </div>
+
+        <div class="box-body">
+          <a class="articles-title" href=""
+            ><p>{{ item.title }}</p></a
+          >
+
+          <div class="box-footer">
+            <span class="date">{{ formatDate(currentDate) }}</span>
+            <button class="share-btn">
+              <a href="#"><i class="fa-solid fa-share"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="news-box" *ngFor="let item of articles">
+        <div class="thumbnail">
+          <img src="/src/assets/img/homeImg1.jpg" alt="" />
+        </div>
+
+        <div class="box-body">
+          <a class="articles-title" href=""
+            ><p>{{ item.title }}</p></a
+          >
+
+          <div class="box-footer">
+            <span class="date">{{ formatDate(currentDate) }}</span>
+            <button class="share-btn">
+              <a href="#"><i class="fa-solid fa-share"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="botton-line">
+  <div class="section-botton">
+    <p class="section-title">#ច្បាប់ និងលិខិតបទដ្ឋាន​ថ្មីៗ</p>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+:root {
+  --moe-bg: #dce8d5;
+  --moe-text: #2e5a44;
+  --moe-border: rgba(46, 90, 68, 0.1);
+}
+.footer-container {
+  background-color: #dde9d6;
+  font-family: Khmer OS Siemreap;
+  color: #737c80;
+}
+.moe-footer {
+  background-color: var(--moe-bg);
+  color: var(--moe-text);
+  font-family: "Kantumruy Pro", sans-serif;
+  padding: 40px 5% 20px 5%;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo-container > img {
+  height: 60px;
+  width: 190px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.95rem;
+}
+
+/* Bottom Bar Styling */
+.footer-bottom {
+  border-top: 1px solid var(--moe-border);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 11px;
+  max-width: 70%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+.social-icons > a i {
+  font-size: 23px;
+}
+.color-blue {
+  color: blue;
+}
+.color-red {
+  color: red;
+}
+.color-gray {
+  color: #47515e;
+}
+.color-blue1 {
+  color: rgb(69, 168, 238);
+}
+.social-icons img:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

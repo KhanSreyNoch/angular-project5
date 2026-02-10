@@ -37,3 +37,75 @@ header {
 .border-header {
   border: 1px solid #c7bebe;
 }
+
+.nav-home-top > ul {
+  background-color: #dde9d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #5f7270;
+  padding: 8px 0px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+}
+
+.link-first {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: green;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(255, 255, 255);
+  min-width: 300px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.dropdown > li a:hover {
+  color: green;
+}
+.dropdown1 {
+  min-width: 100px;
+}
+.dropdown2 {
+  min-width: 230px;
+}
+a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: black;
+}
+.dropdown li a {
+  padding: 10px;
+}
+.has-dropdown:hover > a {
+  color: green;
+  cursor: pointer;
+}
+.has-dropdown:hover > .dropdown {
+  display: block;
+}
+/* hide  */
+.fa-chevron-up {
+  display: none;
+}
+.has-dropdown:hover .fa-chevron-down {
+  display: none;
+}
+.has-dropdown:hover .fa-chevron-up {
+  display: inline-block;
+}
